@@ -2,6 +2,7 @@
 import { existsSync, readFileSync } from "node:fs";
 
 import starlight from "@astrojs/starlight";
+import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 
 const repository = process.env.GITHUB_REPOSITORY;
@@ -73,14 +74,6 @@ export default defineConfig({
           dir: "rtl",
         },
       },
-
-      customCss: ["./src/styles/custom.css"],
-      // Override default component here
-      components: {
-        Footer: "./src/components/starlight/Footer.astro",
-        ThemeSelect: "./src/components/starlight/ThemeToggle.astro",
-      },
-
       ...(githubUrl
         ? {
             social: [
@@ -102,6 +95,9 @@ export default defineConfig({
         : {}),
     }),
   ],
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
 
 function getCustomDomain() {
@@ -114,10 +110,4 @@ function getCustomDomain() {
   const value = readFileSync(cnamePath, "utf8").trim();
 
   return value || undefined;
-}
-
-function withBase(pathname) {
-  const path = pathname.startsWith("/") ? pathname : `/${pathname}`;
-
-  return base === "/" ? path : `${base}${path}`;
 }

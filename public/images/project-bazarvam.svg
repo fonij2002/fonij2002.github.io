@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 540" aria-label="Fictional concept illustration of a fintech dashboard">
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#C9D7EC"/><stop offset="1" stop-color="#E6ECF5"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#33486C" flood-opacity=".19"/></filter></defs>
+  <rect width="760" height="540" fill="url(#bg)"/>
+  <circle cx="674" cy="45" r="190" fill="#F9F1DA" opacity=".7"/><circle cx="84" cy="503" r="145" fill="#B5C8E4" opacity=".8"/>
+  <g transform="translate(61 57)" filter="url(#shadow)">
+    <rect width="639" height="424" rx="19" fill="#fff"/>
+    <rect width="639" height="51" rx="19" fill="#18213D"/><path d="M0 34h639v17H0z" fill="#18213D"/>
+    <circle cx="29" cy="26" r="5" fill="#FBC02D"/><circle cx="48" cy="26" r="5" fill="#586681"/><circle cx="67" cy="26" r="5" fill="#586681"/>
+    <text x="105" y="32" fill="#fff" font-size="17" font-family="Arial,sans-serif" font-weight="bold" letter-spacing="1.5">BazarVam</text>
+    <rect x="20" y="70" width="119" height="333" rx="10" fill="#F2F5F9"/>
+    <rect x="37" y="92" width="84" height="11" rx="5" fill="#D3DCE9"/>
+    <rect x="37" y="125" width="85" height="32" rx="8" fill="#18213D"/><rect x="49" y="137" width="42" height="7" rx="3" fill="#FFC21A"/>
+    <rect x="40" y="180" width="60" height="8" rx="4" fill="#CDD7E6"/><rect x="40" y="213" width="72" height="8" rx="4" fill="#CDD7E6"/><rect x="40" y="246" width="52" height="8" rx="4" fill="#CDD7E6"/>
+    <rect x="159" y="72" width="456" height="41" rx="9" fill="#F6F8FB"/><rect x="174" y="89" width="173" height="9" rx="4" fill="#D1DBEA"/><circle cx="587" cy="92" r="12" fill="#FFC21A"/>
+    <text x="160" y="155" fill="#18213D" font-size="19" font-family="Arial,sans-serif" font-weight="bold">Marketplace overview</text>
+    <rect x="159" y="170" width="211" height="99" rx="12" fill="#F2F5FA"/><text x="177" y="199" fill="#7E8AA0" font-size="11" font-family="Arial,sans-serif">Registered users</text><text x="178" y="242" fill="#18213D" font-size="33" font-family="Arial,sans-serif" font-weight="bold">150+</text>
+    <rect x="384" y="170" width="231" height="99" rx="12" fill="#FFF4CF"/><text x="401" y="199" fill="#9B7D30" font-size="11" font-family="Arial,sans-serif">Marketplace flow</text><path d="M414 237h172" stroke="#E7CB7B" stroke-width="2" stroke-dasharray="7 7"/><circle cx="418" cy="237" r="10" fill="#FFC21A"/><circle cx="499" cy="237" r="10" fill="#FFC21A"/><circle cx="584" cy="237" r="10" fill="#18213D"/>
+    <rect x="159" y="285" width="456" height="101" rx="12" fill="#F6F8FB"/><text x="177" y="308" fill="#7E8AA0" font-size="11" font-family="Arial,sans-serif">Product activity</text>
+    <path d="M179 358c32-3 48-31 78-27 27 5 35 24 63 7 34-22 54 10 79-7 31-20 49-6 72-21 32-20 53 4 115-6" fill="none" stroke="#D9A308" stroke-width="4" stroke-linecap="round"/>
+    <path d="M179 368h407" stroke="#DFE5EE" stroke-width="1.5"/>
+  </g>
+  <g transform="rotate(14 657 438)"><rect x="616" y="391" width="89" height="89" rx="23" fill="#FFC21A"/><path d="M638 447l39-39m-24 0h24v24" fill="none" stroke="#18213D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

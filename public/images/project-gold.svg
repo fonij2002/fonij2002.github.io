@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 540" aria-label="Fictional concept illustration of a gold trading app">
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#FBEAC0"/><stop offset="1" stop-color="#E9D097"/></linearGradient><linearGradient id="coin" x1="0" x2="1" y2="1"><stop stop-color="#FFE797"/><stop offset=".6" stop-color="#E5A911"/><stop offset="1" stop-color="#B47A04"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="17" stdDeviation="24" flood-color="#9D7025" flood-opacity=".25"/></filter></defs>
+  <rect width="760" height="540" fill="url(#bg)"/><circle cx="89" cy="93" r="139" fill="#fff" opacity=".32"/>
+  <g opacity=".7" stroke="#D6B468" fill="none"><circle cx="683" cy="445" r="204"/><circle cx="683" cy="445" r="166"/></g>
+  <g transform="translate(170 15)" filter="url(#shadow)"><rect width="329" height="561" rx="44" fill="#17213B"/><rect x="10" y="10" width="309" height="541" rx="35" fill="#FFFEF8"/><rect x="126" y="19" width="78" height="20" rx="10" fill="#17213B"/>
+    <text x="32" y="73" fill="#18213D" font-size="19" font-family="Arial,sans-serif" font-weight="bold">Gold portfolio</text><circle cx="286" cy="66" r="14" fill="#FBE7AE"/>
+    <rect x="28" y="101" width="274" height="149" rx="21" fill="#18213D"/><text x="47" y="137" fill="#B3BDCF" font-family="Arial" font-size="12">Portfolio balance</text><text x="47" y="189" fill="white" font-family="Arial" font-weight="bold" font-size="31">$ 24,780</text><path d="M47 218h238" stroke="#43516F"/><text x="48" y="235" fill="#FFC21A" font-family="Arial" font-size="11">↗   +8.3%</text>
+    <text x="29" y="297" fill="#18213D" font-family="Arial" font-size="17" font-weight="bold">Market trend</text><path d="M34 408h259" stroke="#E8E2D0"/>
+    <path d="M33 381c25-48 46-15 69-36s36-4 58-19 36 6 57-39 49 7 75-36" stroke="#D49C06" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M33 381c25-48 46-15 69-36s36-4 58-19 36 6 57-39 49 7 75-36v157H33z" fill="#FFC21A" fill-opacity=".14"/>
+    <rect x="31" y="444" width="126" height="53" rx="15" fill="#FFC21A"/><rect x="173" y="444" width="126" height="53" rx="15" fill="#F1F2F5"/><text x="94" y="476" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#18213D">Buy</text><text x="235" y="476" text-anchor="middle" font-family="Arial" font-size="14" fill="#18213D">Sell</text>
+  </g>
+  <g filter="url(#shadow)" transform="translate(0 7)"><circle cx="564" cy="370" r="112" fill="url(#coin)" stroke="#FCE49B" stroke-width="9"/><circle cx="564" cy="370" r="91" fill="none" stroke="#FFE4A0" stroke-width="3"/><text x="564" y="400" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="99" fill="#FFF0B1">Au</text></g>
+  <circle cx="125" cy="420" r="29" fill="#F9E19F" stroke="#FFF1C5" stroke-width="3"/><path d="M113 420h24m-12-12v24" stroke="#B87B05" stroke-width="5" stroke-linecap="round"/>
+</svg>

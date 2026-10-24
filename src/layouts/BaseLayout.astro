@@ -1,0 +1,73 @@
+---
+import '../styles/global.css';
+import { content, type Locale } from '../data/content';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const t = content[locale];
+const canonical = new URL(locale === 'fa' ? '/fa/' : '/', Astro.site ?? 'https://fonij2002.github.io');
+---
+<!doctype html>
+<html lang={locale} dir={locale === 'fa' ? 'rtl' : 'ltr'} data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#18213D" />
+    <meta name="description" content={t.description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={t.title} />
+    <meta property="og:description" content={t.description} />
+    <meta property="og:url" content={canonical.href} />
+    <meta property="og:image" content="https://fonij2002.github.io/images/og-cover.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href={canonical.href} />
+    <link rel="alternate" hreflang="en" href="https://fonij2002.github.io/" />
+    <link rel="alternate" hreflang="fa" href="https://fonij2002.github.io/fa/" />
+    <link rel="alternate" hreflang="x-default" href="https://fonij2002.github.io/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>{t.title}</title>
+    <script is:inline>
+      (() => {
+        try {
+          const stored = localStorage.getItem('fonij-theme');
+          document.documentElement.dataset.theme = stored === 'light' || stored === 'dark'
+            ? stored
+            : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        } catch { document.documentElement.dataset.theme = 'light'; }
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{t.skip}</a>
+    <slot />
+    <script>
+      const root = document.documentElement;
+      const themeButtons = document.querySelectorAll<HTMLButtonElement>('[data-theme-toggle]');
+      const menuButton = document.querySelector<HTMLButtonElement>('[data-menu-toggle]');
+      const nav = document.querySelector<HTMLElement>('[data-nav]');
+
+      themeButtons.forEach((button) => button.addEventListener('click', () => {
+        const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+        root.dataset.theme = next;
+        try { localStorage.setItem('fonij-theme', next); } catch { /* Storage is optional */ }
+      }));
+
+      function closeMenu() {
+        nav?.setAttribute('data-open', 'false');
+        menuButton?.setAttribute('aria-expanded', 'false');
+      }
+
+      menuButton?.addEventListener('click', () => {
+        const opened = nav?.getAttribute('data-open') === 'true';
+        nav?.setAttribute('data-open', String(!opened));
+        menuButton.setAttribute('aria-expanded', String(!opened));
+      });
+      nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+      document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
+      window.addEventListener('resize', () => { if (window.innerWidth > 760) closeMenu(); });
+    </script>
+  </body>
+</html>

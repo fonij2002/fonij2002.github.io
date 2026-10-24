@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 540" aria-label="Fictional concept illustration of a wellness assistant app">
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#DCEFEA"/><stop offset="1" stop-color="#B5DAD3"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="17" stdDeviation="23" flood-color="#48766C" flood-opacity=".2"/></filter></defs>
+  <rect width="760" height="540" fill="url(#bg)"/><circle cx="675" cy="70" r="174" fill="#EFFFFA" opacity=".7"/>
+  <g transform="translate(91 54)" filter="url(#shadow)"><rect width="578" height="440" rx="25" fill="#fff"/><rect x="0" y="0" width="578" height="82" rx="25" fill="#203E46"/><path d="M0 58h578v24H0z" fill="#203E46"/>
+    <circle cx="37" cy="40" r="18" fill="#86CDBA"/><path d="M26 40h7l4-8 7 16 4-8h4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="68" y="47" fill="white" font-family="Arial" font-weight="bold" font-size="21">Lifence</text>
+    <text x="31" y="124" fill="#203E46" font-family="Arial" font-size="21" font-weight="bold">Your daily companion</text><text x="31" y="146" fill="#849898" font-family="Arial" font-size="12">Care designed around everyday moments</text>
+    <rect x="29" y="176" width="313" height="217" rx="17" fill="#E6F5F0"/>
+    <text x="48" y="207" fill="#4D7772" font-family="Arial" font-size="13">Daily overview</text>
+    <path d="M47 299h42l21-45 30 84 24-52 17 13h136" fill="none" stroke="#49A996" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M46 350h277" stroke="#B7DFD4" stroke-width="2"/>
+    <rect x="48" y="364" width="94" height="11" rx="5" fill="#BCDCD4"/><rect x="150" y="364" width="64" height="11" rx="5" fill="#BCDCD4"/>
+    <rect x="357" y="177" width="192" height="97" rx="16" fill="#F0F7F5"/><circle cx="390" cy="208" r="16" fill="#86CDBA"/><path d="M383 208h14m-7-7v14" stroke="#fff" stroke-width="3"/><rect x="416" y="199" width="110" height="9" rx="4" fill="#9CBFB7"/><rect x="416" y="217" width="79" height="8" rx="4" fill="#C9DEDA"/>
+    <rect x="357" y="292" width="192" height="100" rx="16" fill="#203E46"/><circle cx="390" cy="326" r="16" fill="#FFC21A"/><path d="M386 326h8m-4-4v8" stroke="#203E46" stroke-width="2"/><rect x="416" y="321" width="104" height="9" rx="4" fill="#8AACAD"/><rect x="416" y="339" width="76" height="8" rx="4" fill="#6E9394"/>
+  </g>
+  <g transform="rotate(18 669 432)"><rect x="635" y="397" width="69" height="69" rx="21" fill="#FFC21A"/><path d="M650 432h8l7-14 12 29 8-15h10" fill="none" stroke="#18213D" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>
